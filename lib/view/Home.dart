@@ -40,6 +40,7 @@ class _HomeState extends State<Home> {
                       const SizedBox(height: 32),
                       Text(
                         _controller.onBoarding[index].description!,
+                        textAlign: TextAlign.center,
                         style: const TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.w400,
@@ -56,8 +57,8 @@ class _HomeState extends State<Home> {
                     (index) => Obx(() {
                           return Container(
                             margin: const EdgeInsets.only(right: 5),
-                            height: 10,
-                            width: 10,
+                            height: 8,
+                            width: 8,
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               color: _controller.selectedIndex == index
